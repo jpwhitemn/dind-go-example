@@ -20,5 +20,5 @@ RUN pip install docker-compose --force --upgrade
 RUN apk --no-cache add curl
 RUN curl -o docker-compose.yml https://raw.githubusercontent.com/edgexfoundry/developer-scripts/master/compose-files/docker-compose-delhi-0.7.0.yml
 
-#ENTRYPOINT tail -f /dev/nul
+#ENTRYPOINT tail -f /dev/null
 ENTRYPOINT ./hello
