@@ -1,0 +1,7 @@
+docker build -t jims .
+docker run -d -p 8080:8080 --name simplego-test -v /var/run/docker.sock:/var/run/docker.sock jims
+
+docker stop simplego-test
+docker rm simplego-test
+
+docker exec -it simplego-test /bin/sh
